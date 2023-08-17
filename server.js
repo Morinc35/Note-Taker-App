@@ -12,8 +12,9 @@ app.use(express.urlencoded({extended: true }));
 app.use(express.static('public'));
 
 //setting up the routes
-app.use('/api', apiRoute);
+app.use('/apiRoute', apiRoute);
 app.use('/', htmlRoute);
 
 // Starting the server
 app.listen(PORT, () => console.log (`Listenig on Port; ${PORT}`));
+\
